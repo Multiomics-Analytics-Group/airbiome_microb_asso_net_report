@@ -1,0 +1,140 @@
+source,target,asso,diss,adja
+Microbacterium sp. SY138,Micromonospora sp. DPT,0.568857916,0.464296287,0.535703713
+Microbacterium sp. SY138,Nonomuraea sp. N2-4H,0.633485329,0.428085664,0.571914336
+Microbacterium sp. SY138,Jatrophihabitans cynanchi,0.501935022,0.499031551,0.500968449
+Microbacterium sp. 1.5R,Microbacterium terricola,0.538356656,0.480439041,0.519560959
+Microbacterium sp. 1.5R,Metabacillus indicus,0.520007025,0.489894364,0.510105636
+Microbacterium sp. EF45047,Streptomyces sp. NBC_00490,0.522724658,0.488505549,0.511494451
+Microbacterium sp. EF45047,Metabacillus indicus,0.544319791,0.477325994,0.522674006
+Microbacterium hominis,Microbacterium esteraromaticum,0.577574265,0.459579011,0.540420989
+Microbacterium hominis,Streptomyces sp. NBC_00490,0.542185369,0.478442594,0.521557406
+Microbacterium hominis,Dactylosporangium vinaceum,0.565577285,0.466059393,0.533940607
+Microbacterium esteraromaticum,Streptomyces sp. NBC_00490,0.509415723,0.495269763,0.504730237
+Microbacterium esteraromaticum,Dactylosporangium vinaceum,0.63424444,0.427642117,0.572357883
+Microbacterium esteraromaticum,Metabacillus indicus,0.540757318,0.47918821,0.52081179
+Microbacterium terricola,Metabacillus indicus,0.508049821,0.495958758,0.504041242
+Curtobacterium sp. Curtsp57,Priestia aryabhattai,0.522166491,0.488791115,0.511208885
+Curtobacterium sp. Curtsp57,Metabacillus rhizosphaerae,0.634064633,0.427747219,0.572252781
+Agrococcus sp. ProA11,Rathayibacter sp. VKM Ac-2801,0.591510852,0.451934258,0.548065742
+Agrococcus sp. ProA11,Arthrobacter alpinus,0.509350677,0.495302596,0.504697404
+Agrococcus sp. ProA11,Streptomyces sp. AM 3-1-1,0.545299193,0.476812755,0.523187245
+Rathayibacter sp. VKM Ac-2801,Arthrobacter sulfonylureivorans,0.539874582,0.479648526,0.520351474
+Rathayibacter sp. VKM Ac-2801,Arthrobacter alpinus,0.640298711,0.424088015,0.575911985
+Rathayibacter sp. VKM Ac-2801,Streptomyces sp. AM 3-1-1,0.582408481,0.456941746,0.543058254
+Arthrobacter sulfonylureivorans,Arthrobacter alpinus,0.529198399,0.485181204,0.514818796
+Pseudarthrobacter defluvii,Brachybacterium huguangmaarense,0.540270094,0.479442336,0.520557664
+Pseudarthrobacter defluvii,Georgenia sp. SUBG003,0.618511066,0.436743021,0.563256979
+Pseudarthrobacter defluvii,Actinocatenispora sera,0.549904935,0.47439175,0.52560825
+Paenarthrobacter sp. YJN-5,Brachybacterium huguangmaarense,0.506589937,0.496694103,0.503305897
+Paenarthrobacter sp. YJN-5,Peribacillus muralis,0.607542187,0.442977321,0.557022679
+Brachybacterium huguangmaarense,Georgenia sp. SUBG003,0.573902069,0.461572276,0.538427724
+Brachybacterium huguangmaarense,Streptomyces sp. NBC_01281,0.509652741,0.495150108,0.504849892
+Brachybacterium huguangmaarense,Actinocatenispora sera,0.558417029,0.469884545,0.530115455
+Brachybacterium huguangmaarense,Peribacillus muralis,0.536078988,0.481622784,0.518377216
+Brachybacterium huguangmaarense,Lysinibacillus telephonicus,0.507033261,0.496470915,0.503529085
+Streptomyces sp. NBC_01281,Peribacillus muralis,0.555597386,0.471382337,0.528617663
+Streptomyces phaeolivaceus,Rhodococcus sp. JVH1,0.500319583,0.499840183,0.500159817
+Streptomyces phaeolivaceus,Micromonospora siamensis,0.57432341,0.46134401,0.53865599
+Streptomyces phaeolivaceus,Bifidobacterium actinocoloniiforme,0.570163892,0.463592552,0.536407448
+Corynebacterium sp. L2-79-05,Bacillus amyloliquefaciens,0.508216496,0.495874734,0.504125266
+Corynebacterium sp. L2-79-05,Bacillus shivajii,0.53979063,0.479692282,0.520307718
+Corynebacterium freiburgense,Rhodococcus sp. PD04,0.558433917,0.46987556,0.53012444
+Corynebacterium freiburgense,Bifidobacterium pseudocatenulatum,0.518159101,0.490836479,0.509163521
+Corynebacterium freiburgense,Paenibacillus sp. FSL F4-0100,0.528829149,0.48537143,0.51462857
+Rhodococcus sp. ABRD24,Rhodococcus sp. JS3073,0.618703279,0.436632981,0.563367019
+Rhodococcus sp. ABRD24,Rhodococcus sp. DMU1,0.627695977,0.431453371,0.568546629
+Rhodococcus sp. ABRD24,Bifidobacterium pseudocatenulatum,0.559865905,0.469113044,0.530886956
+Rhodococcus sp. WAY2,Rhodococcus sp. D-6,0.514609724,0.492640983,0.507359017
+Rhodococcus sp. WAY2,Gordonia sp. w5E2,0.529914252,0.484812205,0.515187795
+Rhodococcus sp. JVH1,Rhodococcus sp. DMU1,0.504110623,0.497940447,0.502059553
+Rhodococcus sp. JS3073,Nocardia vinacea,0.550753576,0.473944313,0.526055687
+Rhodococcus sp. JS3073,Dermatobacter hominis,0.56361258,0.467112096,0.532887904
+Rhodococcus sp. JS3073,Lysinibacillus agricola,0.59286062,0.451186979,0.548813021
+Rhodococcus sp. DMU1,Bifidobacterium pseudocatenulatum,0.604600751,0.444634259,0.555365741
+Rhodococcus sp. DMU1,Bifidobacterium dentium,0.501124372,0.499437497,0.500562503
+Rhodococcus sp. D-6,Gordonia sp. w5E2,0.537592314,0.480836608,0.519163392
+Rhodococcus sp. D-6,Bifidobacterium dentium,0.552070677,0.473249048,0.526750952
+Rhodococcus sp. PD04,Varibaculum prostatecancerukia,0.516173066,0.491846996,0.508153004
+Rhodococcus sp. PD04,Bifidobacterium pseudocatenulatum,0.517525256,0.491159213,0.508840787
+Nocardia vinacea,Micromonospora sp. FIMYZ51,0.533651545,0.482881173,0.517118827
+Nocardia vinacea,Actinobaculum sp. 313,0.542707541,0.478169666,0.521830334
+Nocardia vinacea,Dermatobacter hominis,0.638233391,0.425303779,0.574696221
+Nocardia vinacea,Bacillus amyloliquefaciens,0.545164388,0.47688343,0.52311657
+Nocardia vinacea,Lysinibacillus agricola,0.54615596,0.476363328,0.523636672
+Gordonia phthalatica,Micromonospora sp. FIMYZ51,0.528605475,0.485486624,0.514513376
+Gordonia phthalatica,Paenibacillus sp. FSL F4-0100,0.545009161,0.476964799,0.523035201
+Amycolatopsis thermalba,Amycolatopsis mongoliensis,0.502097864,0.498949965,0.501050035
+Amycolatopsis thermalba,Saccharopolyspora gregorii,0.515168515,0.492357332,0.507642668
+Amycolatopsis thermalba,Kutzneria albida,0.517795746,0.491021514,0.508978486
+Amycolatopsis thermalba,Micromonospora sp. NBC_01699,0.515842518,0.492014981,0.507985019
+Amycolatopsis mongoliensis,Amycolatopsis roodepoortensis,0.530577997,0.484469815,0.515530185
+Amycolatopsis mongoliensis,Kutzneria albida,0.509587868,0.495182861,0.504817139
+Amycolatopsis mongoliensis,Micromonospora sp. NBC_01699,0.518873655,0.490472397,0.509527603
+Amycolatopsis mongoliensis,Micromonospora sp. NBC_01739,0.536188556,0.481565906,0.518434094
+Amycolatopsis mongoliensis,Lysinibacillus agricola,0.606705834,0.443449076,0.556550924
+Amycolatopsis mongoliensis,Virgibacillus pantothenticus,0.549754182,0.474471189,0.525528811
+Amycolatopsis mongoliensis,Cytobacillus solani,0.527372619,0.486121066,0.513878934
+Amycolatopsis roodepoortensis,Pseudonocardia sp. DSM 110487,0.548906083,0.474917844,0.525082156
+Amycolatopsis roodepoortensis,Micromonospora sp. NBC_01699,0.543413767,0.477800289,0.522199711
+Pseudonocardia sp. DSM 110487,Saccharopolyspora gregorii,0.517240373,0.491304196,0.508695804
+Pseudonocardia sp. DSM 110487,Micromonospora sp. NBC_01699,0.51518341,0.492349769,0.507650231
+Pseudonocardia sp. DSM 110487,Actinotignum urinale,0.524943122,0.487368894,0.512631106
+Saccharopolyspora gregorii,Micromonospora sp. NBC_01699,0.516423639,0.491719616,0.508280384
+Micromonospora sp. NBC_01699,Actinotignum urinale,0.526648399,0.486493371,0.513506629
+Micromonospora sp. FIMYZ51,Actinobaculum sp. 313,0.500479225,0.49976033,0.50023967
+Micromonospora sp. FIMYZ51,Lysinibacillus agricola,0.532623491,0.48341313,0.51658687
+Micromonospora sp. NBC_01739,Lysinibacillus agricola,0.517968533,0.490933533,0.509066467
+Micromonospora sp. NBC_01739,Cytobacillus solani,0.534550912,0.482415323,0.517584677
+Micromonospora sp. DPT,Micromonospora sp. WMMA1947,0.542100689,0.47848684,0.52151316
+Micromonospora sp. DPT,Nonomuraea sp. N2-4H,0.640720489,0.423839304,0.576160696
+Micromonospora sp. WMMA1947,Modestobacter italicus,0.579411153,0.4585787,0.5414213
+Micromonospora sp. WMMA1947,Nonomuraea sp. N2-4H,0.517235061,0.4913069,0.5086931
+Micromonospora sp. WMMA1947,Jatrophihabitans cynanchi,0.657561086,0.413786729,0.586213271
+Micromonospora sp. WMMA1947,Priestia aryabhattai,0.54599185,0.476449447,0.523550553
+Micromonospora sp. WMMA1947,Metabacillus rhizosphaerae,0.52239294,0.488675281,0.511324719
+Micromonospora sp. WMMA1947,Metabacillus sediminis,0.554615148,0.471902983,0.528097017
+Micromonospora sp. WMMA1947,Metabacillus indicus,0.503789808,0.498101492,0.501898508
+Micromonospora sp. WMMA1947,Mesobacillus sp. AQ2,0.506646599,0.496665582,0.503334418
+Micromonospora sp. WMMA1947,Sutcliffiella sp. FSL R7-0096,0.75354242,0.351039585,0.648960415
+Micromonospora sp. WMMD1128,Bacillus paranthracis,0.560281143,0.468891702,0.531108298
+Micromonospora sp. WMMD1128,Bacillus aquiflavi,0.518699201,0.49056131,0.50943869
+Micromonospora siamensis,Bifidobacterium actinocoloniiforme,0.522733416,0.488501066,0.511498934
+Dactylosporangium vinaceum,Metabacillus indicus,0.516054382,0.491907317,0.508092683
+Dactylosporangium vinaceum,Mesobacillus sp. AQ2,0.542561745,0.478245886,0.521754114
+Phytohabitans flavus,Longispora sp. K20-0274,0.542784325,0.47812952,0.52187048
+Phytohabitans flavus,Lysinibacillus louembei,0.540927218,0.479099563,0.520900437
+Solwaraspora sp. WMMA2056,Actinomadura parvosata,0.532633463,0.483407973,0.516592027
+Solwaraspora sp. WMMA2056,Lysinibacillus telephonicus,0.676382617,0.402254511,0.597745489
+Longispora sp. K20-0274,Modestobacter italicus,0.513133764,0.493389418,0.506610582
+Longispora sp. K20-0274,Lysinibacillus louembei,0.558355676,0.469917186,0.530082814
+Modestobacter italicus,Sutcliffiella sp. FSL R7-0096,0.561994822,0.467977124,0.532022876
+Actinomadura parvosata,Streptosporangium roseum,0.530944099,0.484280859,0.515719141
+Actinomadura parvosata,Thermobispora bispora,0.541728892,0.478681057,0.521318943
+Actinomadura parvosata,Spirillospora sp. NBC_01491,0.651584875,0.417381795,0.582618205
+Nonomuraea coxensis,Jatrophihabitans cynanchi,0.512394673,0.493763773,0.506236227
+Nonomuraea coxensis,Mesobacillus sp. AQ2,0.567699807,0.464919451,0.535080549
+Streptosporangium roseum,Spirillospora sp. NBC_01491,0.564627679,0.466568495,0.533431505
+Thermobispora bispora,Spirillospora sp. NBC_01491,0.556880027,0.470701589,0.529298411
+Actinobaculum sp. 313,Dermatobacter hominis,0.548537383,0.475111891,0.524888109
+Actinobaculum sp. 313,Lysinibacillus agricola,0.544071038,0.477456261,0.522543739
+Actinobaculum sp. 313,Virgibacillus pantothenticus,0.546838881,0.476004789,0.523995211
+Varibaculum prostatecancerukia,Bifidobacterium pseudocatenulatum,0.546258741,0.476309384,0.523690616
+Varibaculum prostatecancerukia,Paenibacillus sp. FSL F4-0100,0.538946705,0.480131906,0.519868094
+Nakamurella sp. PAMC28650,Bifidobacterium pseudocatenulatum,0.513780138,0.493061792,0.506938208
+Nakamurella sp. PAMC28650,Bifidobacterium dentium,0.509453969,0.495250457,0.504749543
+Bifidobacterium pseudocatenulatum,Bifidobacterium dentium,0.564954666,0.466393254,0.533606746
+Jatrophihabitans cynanchi,Priestia aryabhattai,0.538609898,0.480307246,0.519692754
+Jatrophihabitans cynanchi,Metabacillus rhizosphaerae,0.772122186,0.337548377,0.662451623
+Jatrophihabitans cynanchi,Mesobacillus sp. AQ2,0.603906654,0.445024351,0.554975649
+Bacillus wiedmannii,Lysinibacillus sphaericus,0.524914275,0.487383691,0.512616309
+Bacillus wiedmannii,Metabacillus sediminis,0.511762281,0.494083859,0.505916141
+Bacillus wiedmannii,Mesobacillus sp. AQ2,0.552350378,0.473101269,0.526898731
+Bacillus paranthracis,Bacillus aquiflavi,0.503641324,0.498176011,0.501823989
+Bacillus shivajii,Lysinibacillus agricola,0.526477264,0.486581307,0.513418693
+Priestia aryabhattai,Lysinibacillus telephonicus,0.587437914,0.454181729,0.545818271
+Lysinibacillus sphaericus,Metabacillus rhizosphaerae,0.555331801,0.47152317,0.52847683
+Lysinibacillus sphaericus,Metabacillus sediminis,0.548917967,0.474911588,0.525088412
+Lysinibacillus agricola,Cytobacillus solani,0.515672225,0.492101501,0.507898499
+Metabacillus rhizosphaerae,Metabacillus sediminis,0.559550716,0.469280984,0.530719016
+Metabacillus rhizosphaerae,Mesobacillus sp. AQ2,0.528530341,0.485525313,0.514474687
+Metabacillus sediminis,Sutcliffiella sp. FSL R7-0096,0.531605415,0.483939348,0.516060652
