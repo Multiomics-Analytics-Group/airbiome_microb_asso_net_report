@@ -19,7 +19,7 @@ jobs:
       # --- HTML example deployment ---
       - name: Rename entry point of report to index.html
         run: |
-          mv docs/quarto_report/quarto_report.html docs/quarto_report/index.html
+          mv quarto_report/quarto_report.html quarto_report/index.html
       - name: Publish HTML report to GitHub Pages (gh-pages branch)
         uses: peaceiris/actions-gh-pages@v4
         with:
