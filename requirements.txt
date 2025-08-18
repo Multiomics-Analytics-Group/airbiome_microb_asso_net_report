@@ -1,2 +1,0 @@
-vuegen
-streamlit-aggrid
