@@ -91,12 +91,52 @@ st.markdown(
     '''
     <h4 style='text-align: center;
     color: #2b8cbe;'>
+    Centrality Metrics All Nodes
+    </h4>
+    ''',
+    unsafe_allow_html=True)
+
+file_path = (section_dir / '../../AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/3_centrality_metrics_all_nodes.csv').resolve().as_posix()
+df = pd.read_csv(file_path)
+
+
+# Displays a DataFrame using AgGrid with configurable options.
+grid_builder = GridOptionsBuilder.from_dataframe(df)
+grid_builder.configure_default_column(editable=True,
+                                      groupable=True,
+                                      filter=True,
+)
+grid_builder.configure_side_bar(filters_panel=True,
+                                columns_panel=True)
+grid_builder.configure_selection(selection_mode="multiple")
+grid_builder.configure_pagination(enabled=True,
+                                paginationAutoPageSize=False,
+                                paginationPageSize=20,
+)
+grid_options = grid_builder.build()
+
+AgGrid(df, gridOptions=grid_options, enable_enterprise_modules=True)
+
+# Button to download the df
+df_csv = df.to_csv(sep=',', header=True, index=False
+                  ).encode('utf-8')
+st.download_button(
+    label="Download dataframe as CSV",
+    data=df_csv,
+    file_name=f"dataframe_{df_index}.csv",
+    mime='text/csv',
+    key=f"download_button_{df_index}")
+df_index += 1
+st.markdown(
+    '''
+    <h4 style='text-align: center;
+    color: #2b8cbe;'>
     Module Taxa Membership
     </h4>
     ''',
     unsafe_allow_html=True)
 
-file_path = (section_dir / '../../AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/3_module_taxa_membership.csv').resolve().as_posix()
+file_path = (section_dir / '../../AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/4_module_taxa_membership.csv').resolve().as_posix()
 df = pd.read_csv(file_path)
 
 
@@ -136,7 +176,7 @@ st.markdown(
     ''',
     unsafe_allow_html=True)
 
-file_path = (section_dir / '../../AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/4_module_means.csv').resolve().as_posix()
+file_path = (section_dir / '../../AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/5_module_means.csv').resolve().as_posix()
 df = pd.read_csv(file_path)
 
 
@@ -177,7 +217,7 @@ st.markdown(
     unsafe_allow_html=True)
 
 
-file_path = (section_dir / '../../AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/5_module_means_heatmap.json').resolve().as_posix()
+file_path = (section_dir / '../../AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/6_module_means_heatmap.json').resolve().as_posix()
 with open(file_path, 'r') as plot_file:
     plot_json = json.load(plot_file)
 
@@ -200,7 +240,7 @@ st.markdown(
     unsafe_allow_html=True)
 
 
-file_path = (section_dir / '../../AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/6_module_variability.json').resolve().as_posix()
+file_path = (section_dir / '../../AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/7_module_variability.json').resolve().as_posix()
 with open(file_path, 'r') as plot_file:
     plot_json = json.load(plot_file)
 
@@ -222,7 +262,7 @@ st.markdown(
     ''',
     unsafe_allow_html=True)
 
-file_path = (section_dir / '../../AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/7_module_metadata_correlations.csv').resolve().as_posix()
+file_path = (section_dir / '../../AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/8_module_metadata_correlations.csv').resolve().as_posix()
 df = pd.read_csv(file_path)
 
 
@@ -263,7 +303,7 @@ st.markdown(
     unsafe_allow_html=True)
 
 
-file_path = (section_dir / '../../AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/8_module_metadata_correlations_volcano_plot.json').resolve().as_posix()
+file_path = (section_dir / '../../AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/9_module_metadata_correlations_volcano_plot.json').resolve().as_posix()
 with open(file_path, 'r') as plot_file:
     plot_json = json.load(plot_file)
 
@@ -285,7 +325,7 @@ st.markdown(
     ''',
     unsafe_allow_html=True)
 
-file_path = (section_dir / '../../AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/9_significant_module_metadata_correlations.csv').resolve().as_posix()
+file_path = (section_dir / '../../AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/10_significant_module_metadata_correlations.csv').resolve().as_posix()
 df = pd.read_csv(file_path)
 
 
@@ -326,7 +366,7 @@ st.markdown(
     unsafe_allow_html=True)
 
 
-file_path = (section_dir / '../../AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/10_top_correlations_heatmap.json').resolve().as_posix()
+file_path = (section_dir / '../../AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/11_top_correlations_heatmap.json').resolve().as_posix()
 with open(file_path, 'r') as plot_file:
     plot_json = json.load(plot_file)
 
