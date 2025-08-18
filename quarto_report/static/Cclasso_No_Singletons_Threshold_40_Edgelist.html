@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: white;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+             #config {
+                 float: left;
+                 width: 400px;
+                 height: 600px;
+             }
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+            <div id="config"></div>
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Aceticella", "label": "Aceticella", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Debaryomyces", "label": "Debaryomyces", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Halobacillus", "label": "Halobacillus", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Halopiger", "label": "Halopiger", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Glycocaulis", "label": "Glycocaulis", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Advenella", "label": "Advenella", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Agrilutibacter", "label": "Agrilutibacter", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Allocoprobacillus", "label": "Allocoprobacillus", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Anabaena", "label": "Anabaena", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Deferribacter", "label": "Deferribacter", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Ensifer", "label": "Ensifer", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Halospeciosus", "label": "Halospeciosus", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Aestuariibaculum", "label": "Aestuariibaculum", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Ammonifex", "label": "Ammonifex", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Gudongella", "label": "Gudongella", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Cysteiniphilum", "label": "Cysteiniphilum", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Facklamia", "label": "Facklamia", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Algihabitans", "label": "Algihabitans", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Ferrovibrio", "label": "Ferrovibrio", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Flexistipes", "label": "Flexistipes", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Coprococcus", "label": "Coprococcus", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Aliirhizobium", "label": "Aliirhizobium", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Cruoricaptor", "label": "Cruoricaptor", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Gleimia", "label": "Gleimia", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Emiliania", "label": "Emiliania", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Ereboglobus", "label": "Ereboglobus", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Erwinia", "label": "Erwinia", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Escherichia", "label": "Escherichia", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Halanaeroarchaeum", "label": "Halanaeroarchaeum", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Herbiconiux", "label": "Herbiconiux", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Aurantimicrobium", "label": "Aurantimicrobium", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Alkalilimnicola", "label": "Alkalilimnicola", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Aquella", "label": "Aquella", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Anatilimnocola", "label": "Anatilimnocola", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Fadolivirus", "label": "Fadolivirus", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Gordonia", "label": "Gordonia", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Amaricoccus", "label": "Amaricoccus", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Anaerostipes", "label": "Anaerostipes", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Chloroherpeton", "label": "Chloroherpeton", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Citricoccus", "label": "Citricoccus", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Egbenema", "label": "Egbenema", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Bordetella", "label": "Bordetella", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Croceimicrobium", "label": "Croceimicrobium", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Fluviispira", "label": "Fluviispira", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Furfurilactobacillus", "label": "Furfurilactobacillus", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Galbibacter", "label": "Galbibacter", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Eneladusvirus", "label": "Eneladusvirus", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Arthrobacter", "label": "Arthrobacter", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Dermacoccus", "label": "Dermacoccus", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Geosporobacter", "label": "Geosporobacter", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Antarctobacter", "label": "Antarctobacter", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Butyricimonas", "label": "Butyricimonas", "shape": "dot", "size": 10}, {"borderWidth": 2, "borderWidthSelected": 2.5, "color": "#97c2fc", "font": {"size": 12}, "id": "Epulonipiscium", "label": "Epulonipiscium", "shape": "dot", "size": 10}]);
+                  edges = new vis.DataSet([{"adja": 0.495481389, "asso": 0.490921943, "diss": 0.504518611, "from": "Aceticella", "to": "Debaryomyces", "width": 1}, {"adja": 0.133965873, "asso": -0.500030217, "diss": 0.866034127, "from": "Aceticella", "to": "Halobacillus", "width": 1}, {"adja": 0.485324553, "asso": 0.470218368, "diss": 0.514675447, "from": "Aceticella", "to": "Halopiger", "width": 1}, {"adja": 0.138259431, "asso": -0.485193618, "diss": 0.861740569, "from": "Debaryomyces", "to": "Halobacillus", "width": 1}, {"adja": 0.477674776, "asso": 0.454352722, "diss": 0.522325224, "from": "Halopiger", "to": "Glycocaulis", "width": 1}, {"adja": 0.455289062, "asso": 0.406579988, "diss": 0.544710938, "from": "Advenella", "to": "Agrilutibacter", "width": 1}, {"adja": 0.477893291, "asso": 0.454809168, "diss": 0.522106709, "from": "Advenella", "to": "Allocoprobacillus", "width": 1}, {"adja": 0.468876566, "asso": 0.435815795, "diss": 0.531123434, "from": "Agrilutibacter", "to": "Anabaena", "width": 1}, {"adja": 0.467761435, "asso": 0.433444221, "diss": 0.532238565, "from": "Agrilutibacter", "to": "Deferribacter", "width": 1}, {"adja": 0.162646296, "asso": -0.402322451, "diss": 0.837353704, "from": "Agrilutibacter", "to": "Ensifer", "width": 1}, {"adja": 0.453701147, "asso": 0.403115128, "diss": 0.546298853, "from": "Allocoprobacillus", "to": "Anabaena", "width": 1}, {"adja": 0.460612956, "asso": 0.418123234, "diss": 0.539387044, "from": "Allocoprobacillus", "to": "Deferribacter", "width": 1}, {"adja": 0.455534533, "asso": 0.40711471, "diss": 0.544465467, "from": "Allocoprobacillus", "to": "Halospeciosus", "width": 1}, {"adja": 0.468600336, "asso": 0.435228794, "diss": 0.531399664, "from": "Aestuariibaculum", "to": "Ammonifex", "width": 1}, {"adja": 0.494481274, "asso": 0.488901635, "diss": 0.505518726, "from": "Aestuariibaculum", "to": "Gudongella", "width": 1}, {"adja": 0.473798801, "asso": 0.446224597, "diss": 0.526201199, "from": "Ammonifex", "to": "Cysteiniphilum", "width": 1}, {"adja": 0.452671643, "asso": 0.400863338, "diss": 0.547328357, "from": "Ammonifex", "to": "Gudongella", "width": 1}, {"adja": 0.474936264, "asso": 0.448616147, "diss": 0.525063736, "from": "Gudongella", "to": "Facklamia", "width": 1}, {"adja": 0.460794292, "asso": 0.418514408, "diss": 0.539205708, "from": "Anabaena", "to": "Deferribacter", "width": 1}, {"adja": 0.471026753, "asso": 0.440374608, "diss": 0.528973247, "from": "Deferribacter", "to": "Algihabitans", "width": 1}, {"adja": 0.51251158, "asso": 0.524710081, "diss": 0.48748842, "from": "Deferribacter", "to": "Ferrovibrio", "width": 1}, {"adja": 0.466375831, "asso": 0.430490493, "diss": 0.533624169, "from": "Deferribacter", "to": "Flexistipes", "width": 1}, {"adja": 0.484693592, "asso": 0.468918611, "diss": 0.515306408, "from": "Ensifer", "to": "Coprococcus", "width": 1}, {"adja": 0.149872011, "asso": -0.445435197, "diss": 0.850127989, "from": "Ensifer", "to": "Ferrovibrio", "width": 1}, {"adja": 0.163218817, "asso": -0.400405497, "diss": 0.836781183, "from": "Ensifer", "to": "Halospeciosus", "width": 1}, {"adja": 0.152716533, "asso": -0.435778546, "diss": 0.847283467, "from": "Algihabitans", "to": "Coprococcus", "width": 1}, {"adja": 0.530667477, "asso": 0.559453966, "diss": 0.469332523, "from": "Algihabitans", "to": "Ferrovibrio", "width": 1}, {"adja": 0.142954699, "asso": -0.469053297, "diss": 0.857045301, "from": "Coprococcus", "to": "Ferrovibrio", "width": 1}, {"adja": 0.464852597, "asso": 0.427234515, "diss": 0.535147403, "from": "Ferrovibrio", "to": "Flexistipes", "width": 1}, {"adja": 0.472837298, "asso": 0.444198971, "diss": 0.527162702, "from": "Ferrovibrio", "to": "Halospeciosus", "width": 1}, {"adja": 0.45253605, "asso": 0.400566446, "diss": 0.54746395, "from": "Aliirhizobium", "to": "Cruoricaptor", "width": 1}, {"adja": 0.457893351, "asso": 0.412240763, "diss": 0.542106649, "from": "Aliirhizobium", "to": "Gleimia", "width": 1}, {"adja": 0.464343654, "asso": 0.426144559, "diss": 0.535656346, "from": "Cruoricaptor", "to": "Emiliania", "width": 1}, {"adja": 0.456473607, "asso": 0.409158121, "diss": 0.543526393, "from": "Cruoricaptor", "to": "Ereboglobus", "width": 1}, {"adja": 0.46121737, "asso": 0.419426556, "diss": 0.53878263, "from": "Cruoricaptor", "to": "Erwinia", "width": 1}, {"adja": 0.454212723, "asso": 0.404232497, "diss": 0.545787277, "from": "Cruoricaptor", "to": "Escherichia", "width": 1}, {"adja": 0.48893064, "asso": 0.477616218, "diss": 0.51106936, "from": "Cruoricaptor", "to": "Gleimia", "width": 1}, {"adja": 0.461189258, "asso": 0.419365969, "diss": 0.538810742, "from": "Cruoricaptor", "to": "Halanaeroarchaeum", "width": 1}, {"adja": 0.457956186, "asso": 0.412377008, "diss": 0.542043814, "from": "Cruoricaptor", "to": "Herbiconiux", "width": 1}, {"adja": 0.452529045, "asso": 0.400551107, "diss": 0.547470955, "from": "Gleimia", "to": "Aurantimicrobium", "width": 1}, {"adja": 0.477497374, "asso": 0.453982012, "diss": 0.522502626, "from": "Gleimia", "to": "Emiliania", "width": 1}, {"adja": 0.461990898, "asso": 0.421092411, "diss": 0.538009102, "from": "Gleimia", "to": "Ereboglobus", "width": 1}, {"adja": 0.467358799, "asso": 0.432586701, "diss": 0.532641201, "from": "Gleimia", "to": "Erwinia", "width": 1}, {"adja": 0.464612729, "asso": 0.42672094, "diss": 0.535387271, "from": "Gleimia", "to": "Escherichia", "width": 1}, {"adja": 0.466583249, "asso": 0.43093314, "diss": 0.533416751, "from": "Gleimia", "to": "Halanaeroarchaeum", "width": 1}, {"adja": 0.473163798, "asso": 0.444887233, "diss": 0.526836202, "from": "Gleimia", "to": "Herbiconiux", "width": 1}, {"adja": 0.464313284, "asso": 0.426079484, "diss": 0.535686716, "from": "Alkalilimnicola", "to": "Aquella", "width": 1}, {"adja": 0.487565842, "asso": 0.474822467, "diss": 0.512434158, "from": "Alkalilimnicola", "to": "Glycocaulis", "width": 1}, {"adja": 0.468029957, "asso": 0.434015746, "diss": 0.531970043, "from": "Aquella", "to": "Anatilimnocola", "width": 1}, {"adja": 0.455808389, "asso": 0.407710982, "diss": 0.544191611, "from": "Glycocaulis", "to": "Fadolivirus", "width": 1}, {"adja": 0.462741047, "asso": 0.422705636, "diss": 0.537258953, "from": "Glycocaulis", "to": "Gordonia", "width": 1}, {"adja": 0.153871679, "asso": -0.431866271, "diss": 0.846128321, "from": "Amaricoccus", "to": "Anaerostipes", "width": 1}, {"adja": 0.15170001, "asso": -0.439225746, "diss": 0.84829999, "from": "Amaricoccus", "to": "Chloroherpeton", "width": 1}, {"adja": 0.163153199, "asso": -0.400625137, "diss": 0.836846801, "from": "Amaricoccus", "to": "Citricoccus", "width": 1}, {"adja": 0.465179123, "asso": 0.427933258, "diss": 0.534820877, "from": "Amaricoccus", "to": "Egbenema", "width": 1}, {"adja": 0.503857737, "asso": 0.507685709, "diss": 0.496142263, "from": "Anaerostipes", "to": "Bordetella", "width": 1}, {"adja": 0.498681679, "asso": 0.497359881, "diss": 0.501318321, "from": "Anaerostipes", "to": "Chloroherpeton", "width": 1}, {"adja": 0.487911554, "asso": 0.475530847, "diss": 0.512088446, "from": "Anaerostipes", "to": "Citricoccus", "width": 1}, {"adja": 0.4578028, "asso": 0.412044392, "diss": 0.5421972, "from": "Anaerostipes", "to": "Croceimicrobium", "width": 1}, {"adja": 0.134071058, "asso": -0.499665865, "diss": 0.865928942, "from": "Anaerostipes", "to": "Egbenema", "width": 1}, {"adja": 0.452878826, "asso": 0.401316843, "diss": 0.547121174, "from": "Chloroherpeton", "to": "Bordetella", "width": 1}, {"adja": 0.526908249, "asso": 0.552368391, "diss": 0.473091751, "from": "Chloroherpeton", "to": "Citricoccus", "width": 1}, {"adja": 0.507694034, "asso": 0.515269671, "diss": 0.492305966, "from": "Chloroherpeton", "to": "Croceimicrobium", "width": 1}, {"adja": 0.141276894, "asso": -0.474810746, "diss": 0.858723106, "from": "Chloroherpeton", "to": "Egbenema", "width": 1}, {"adja": 0.151632842, "asso": -0.439453669, "diss": 0.848367158, "from": "Chloroherpeton", "to": "Fluviispira", "width": 1}, {"adja": 0.458536912, "asso": 0.413635449, "diss": 0.541463088, "from": "Citricoccus", "to": "Bordetella", "width": 1}, {"adja": 0.526588822, "asso": 0.551763714, "diss": 0.473411178, "from": "Citricoccus", "to": "Croceimicrobium", "width": 1}, {"adja": 0.152447645, "asso": -0.43668999, "diss": 0.847552355, "from": "Citricoccus", "to": "Egbenema", "width": 1}, {"adja": 0.148214267, "asso": -0.45107787, "diss": 0.851785733, "from": "Citricoccus", "to": "Fluviispira", "width": 1}, {"adja": 0.464007066, "asso": 0.425423149, "diss": 0.535992934, "from": "Citricoccus", "to": "Furfurilactobacillus", "width": 1}, {"adja": 0.163030072, "asso": -0.40103732, "diss": 0.836969928, "from": "Citricoccus", "to": "Galbibacter", "width": 1}, {"adja": 0.15618572, "asso": -0.424045079, "diss": 0.84381428, "from": "Egbenema", "to": "Croceimicrobium", "width": 1}, {"adja": 0.47737075, "asso": 0.453717335, "diss": 0.52262925, "from": "Egbenema", "to": "Galbibacter", "width": 1}, {"adja": 0.463598338, "asso": 0.424546514, "diss": 0.536401662, "from": "Cysteiniphilum", "to": "Eneladusvirus", "width": 1}, {"adja": 0.470290655, "asso": 0.438816019, "diss": 0.529709345, "from": "Bordetella", "to": "Croceimicrobium", "width": 1}, {"adja": 0.155019801, "asso": -0.427983073, "diss": 0.844980199, "from": "Croceimicrobium", "to": "Fluviispira", "width": 1}, {"adja": 0.472311424, "asso": 0.443089534, "diss": 0.527688576, "from": "Croceimicrobium", "to": "Furfurilactobacillus", "width": 1}, {"adja": 0.455922093, "asso": 0.407958462, "diss": 0.544077907, "from": "Anatilimnocola", "to": "Arthrobacter", "width": 1}, {"adja": 0.502917827, "asso": 0.505818626, "diss": 0.497082173, "from": "Anatilimnocola", "to": "Dermacoccus", "width": 1}, {"adja": 0.465930814, "asso": 0.429540208, "diss": 0.534069186, "from": "Anatilimnocola", "to": "Geosporobacter", "width": 1}, {"adja": 0.454416905, "asso": 0.404678174, "diss": 0.545583095, "from": "Arthrobacter", "to": "Geosporobacter", "width": 1}, {"adja": 0.505318687, "asso": 0.510580798, "diss": 0.494681313, "from": "Dermacoccus", "to": "Geosporobacter", "width": 1}, {"adja": 0.457986931, "asso": 0.412443666, "diss": 0.542013069, "from": "Antarctobacter", "to": "Butyricimonas", "width": 1}, {"adja": 0.56151687, "asso": 0.61546509, "diss": 0.43848313, "from": "Antarctobacter", "to": "Epulonipiscium", "width": 1}, {"adja": 0.456462241, "asso": 0.40913341, "diss": 0.543537759, "from": "Butyricimonas", "to": "Epulonipiscium", "width": 1}, {"adja": 0.459731682, "asso": 0.416220289, "diss": 0.540268318, "from": "Aurantimicrobium", "to": "Erwinia", "width": 1}, {"adja": 0.45688094, "asso": 0.410043374, "diss": 0.54311906, "from": "Emiliania", "to": "Herbiconiux", "width": 1}, {"adja": 0.492781634, "asso": 0.485459059, "diss": 0.507218366, "from": "Eneladusvirus", "to": "Facklamia", "width": 1}, {"adja": 0.484152636, "asso": 0.467802994, "diss": 0.515847364, "from": "Fadolivirus", "to": "Gordonia", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "forceAtlas2Based": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.005,
+            "damping": 0.4,
+            "gravitationalConstant": -30,
+            "springConstant": 0.1,
+            "springLength": 100
+        },
+        "solver": "forceAtlas2Based",
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+                  // if this network requires displaying the configure window,
+                  // put it in its div
+                  options.configure["container"] = document.getElementById("config");
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

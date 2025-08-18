@@ -10,60 +10,67 @@ sections:
   - title: Nopge Genus Adj
     description: ''
     components:
-    - title: Nopge Gen Metrics Adj
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/1_NOPGE_gen_metrics_adj.xlsx
+    - title: Network Metrics All Thresholds
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/1_Network_metrics_all_thresholds.xlsx
       description: ''
       caption: ''
       component_type: dataframe
       file_format: xlsx
-    - title: Cclasso Nosinglt 65 Edgelist
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/2_cclasso_nosinglt_65_edgelist.csv
+    - title: Cclasso No Singletons Threshold 65 Edgelist
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/2_cclasso_no_singletons_threshold_65_edgelist.csv
       description: ''
       caption: ''
       component_type: plot
       plot_type: interactive_network
       csv_network_format: edgelist
+    - title: Module Taxa Membership
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/3_module_taxa_membership.csv
+      description: ''
+      caption: ''
+      component_type: dataframe
+      file_format: csv
+      delimiter: ','
     - title: Module Means
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/3_module_means.csv
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/4_module_means.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
     - title: Module Means Heatmap
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/4_module_means_heatmap.json
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/5_module_means_heatmap.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
-    - title: Violin Plot Module Variability
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/5_violin_plot_module_variability.json
+    - title: Module Variability
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/6_module_variability.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
     - title: Module Metadata Correlations
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/6_module_metadata_correlations.csv
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/7_module_metadata_correlations.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
-    - title: Correlation Volcano Plot
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/7_correlation_volcano_plot.json
+    - title: Module Metadata Correlations Volcano Plot
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/8_module_metadata_correlations_volcano_plot.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
-    - title: Significant Module Metadata Corr
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/8_significant_module_metadata_corr.csv
+    - title: Significant Module Metadata Correlations
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/9_significant_module_metadata_correlations.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
     - title: Top Correlations Heatmap
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/9_top_correlations_heatmap.json
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_genus_adj/10_top_correlations_heatmap.json
       description: ''
       caption: ''
       component_type: plot
@@ -71,53 +78,60 @@ sections:
   - title: Nopge Species Adj
     description: ''
     components:
-    - title: Nopge Sp 01 Cclasso Metrics
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_species_adj/1_NOPGE_sp_01_cclasso_metrics.xlsx
+    - title: Network Metrics All Thresholds
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_species_adj/1_Network_metrics_all_thresholds.xlsx
       description: ''
       caption: ''
       component_type: dataframe
       file_format: xlsx
-    - title: Cclasso Nosinglt 65 Edgelist
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_species_adj/2_cclasso_nosinglt_65_edgelist.csv
+    - title: Cclasso No Singletons Threshold 65 Edgelist
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_species_adj/2_cclasso_no_singletons_threshold_65_edgelist.csv
       description: ''
       caption: ''
       component_type: plot
       plot_type: interactive_network
       csv_network_format: edgelist
+    - title: Module Taxa Membership
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_species_adj/3_module_taxa_membership.csv
+      description: ''
+      caption: ''
+      component_type: dataframe
+      file_format: csv
+      delimiter: ','
     - title: Module Means
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_species_adj/3_module_means.csv
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_species_adj/4_module_means.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
     - title: Module Means Heatmap
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_species_adj/4_module_means_heatmap.json
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_species_adj/5_module_means_heatmap.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
-    - title: Violin Plot Module Variability
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_species_adj/5_violin_plot_module_variability.json
+    - title: Module Variability
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_species_adj/6_module_variability.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
     - title: Module Metadata Correlations
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_species_adj/6_module_metadata_correlations.csv
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_species_adj/7_module_metadata_correlations.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
-    - title: Correlation Volcano Plot
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_species_adj/7_correlation_volcano_plot.json
+    - title: Module Metadata Correlations Volcano Plot
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_species_adj/8_module_metadata_correlations_volcano_plot.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
     - title: Top Correlations Heatmap
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_species_adj/8_top_correlations_heatmap.json
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/NOPGE_species_adj/9_top_correlations_heatmap.json
       description: ''
       caption: ''
       component_type: plot
@@ -125,60 +139,67 @@ sections:
   - title: Pge Genus Adj
     description: ''
     components:
-    - title: Pge Gen Metrics Adj
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/1_PGE_gen_metrics_adj.xlsx
+    - title: Network Metrics All Thresholds
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/1_Network_metrics_all_thresholds.xlsx
       description: ''
       caption: ''
       component_type: dataframe
       file_format: xlsx
-    - title: Cclasso Nosinglt 45 Edgelist
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/2_cclasso_nosinglt_45_edgelist.csv
+    - title: Cclasso No Singletons Threshold 45 Edgelist
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/2_cclasso_no_singletons_threshold_45_edgelist.csv
       description: ''
       caption: ''
       component_type: plot
       plot_type: interactive_network
       csv_network_format: edgelist
+    - title: Module Taxa Membership
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/3_module_taxa_membership.csv
+      description: ''
+      caption: ''
+      component_type: dataframe
+      file_format: csv
+      delimiter: ','
     - title: Module Means
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/3_module_means.csv
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/4_module_means.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
     - title: Module Means Heatmap
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/4_module_means_heatmap.json
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/5_module_means_heatmap.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
-    - title: Violin Plot Module Variability
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/5_violin_plot_module_variability.json
+    - title: Module Variability
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/6_module_variability.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
     - title: Module Metadata Correlations
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/6_module_metadata_correlations.csv
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/7_module_metadata_correlations.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
-    - title: Correlation Volcano Plot
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/7_correlation_volcano_plot.json
+    - title: Module Metadata Correlations Volcano Plot
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/8_module_metadata_correlations_volcano_plot.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
-    - title: Significant Module Metadata Corr
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/8_significant_module_metadata_corr.csv
+    - title: Significant Module Metadata Correlations
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/9_significant_module_metadata_correlations.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
     - title: Top Correlations Heatmap
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/9_top_correlations_heatmap.json
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_genus_adj/10_top_correlations_heatmap.json
       description: ''
       caption: ''
       component_type: plot
@@ -186,60 +207,67 @@ sections:
   - title: Pge Species Adj
     description: ''
     components:
-    - title: Pge Sp Metrics Adj
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/1_PGE_sp_metrics_adj.xlsx
+    - title: Network Metrics All Thresholds
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/1_Network_metrics_all_thresholds.xlsx
       description: ''
       caption: ''
       component_type: dataframe
       file_format: xlsx
-    - title: Cclasso Nosinglt 50 Edgelist
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/2_cclasso_nosinglt_50_edgelist.csv
+    - title: Cclasso No Singletons Threshold 50 Edgelist
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/2_cclasso_no_singletons_threshold_50_edgelist.csv
       description: ''
       caption: ''
       component_type: plot
       plot_type: interactive_network
       csv_network_format: edgelist
+    - title: Module Taxa Membership
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/3_module_taxa_membership.csv
+      description: ''
+      caption: ''
+      component_type: dataframe
+      file_format: csv
+      delimiter: ','
     - title: Module Means
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/3_module_means.csv
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/4_module_means.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
     - title: Module Means Heatmap
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/4_module_means_heatmap.json
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/5_module_means_heatmap.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
-    - title: Violin Plot Module Variability
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/5_violin_plot_module_variability.json
+    - title: Module Variability
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/6_module_variability.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
     - title: Module Metadata Correlations
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/6_module_metadata_correlations.csv
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/7_module_metadata_correlations.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
-    - title: Correlation Volcano Plot
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/7_correlation_volcano_plot.json
+    - title: Module Metadata Correlations Volcano Plot
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/8_module_metadata_correlations_volcano_plot.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
-    - title: Significant Module Metadata Corr
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/8_significant_module_metadata_corr.csv
+    - title: Significant Module Metadata Correlations
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/9_significant_module_metadata_correlations.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
     - title: Top Correlations Heatmap
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/9_top_correlations_heatmap.json
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Adjacency_networks/PGE_species_adj/10_top_correlations_heatmap.json
       description: ''
       caption: ''
       component_type: plot
@@ -251,60 +279,67 @@ sections:
   - title: Nopge Genus Asso
     description: ''
     components:
-    - title: Nopge Gen Metrics Asso
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/1_NOPGE_gen_metrics_asso.xlsx
+    - title: Network Metrics All Thresholds
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/1_Network_metrics_all_thresholds.xlsx
       description: ''
       caption: ''
       component_type: dataframe
       file_format: xlsx
-    - title: Cclasso Nosinglt 80 Edgelist
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/2_cclasso_nosinglt_80_edgelist.csv
+    - title: Cclasso No Singletons Threshold 80 Edgelist
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/2_cclasso_no_singletons_threshold_80_edgelist.csv
       description: ''
       caption: ''
       component_type: plot
       plot_type: interactive_network
       csv_network_format: edgelist
+    - title: Module Taxa Membership
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/3_module_taxa_membership.csv
+      description: ''
+      caption: ''
+      component_type: dataframe
+      file_format: csv
+      delimiter: ','
     - title: Module Means
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/3_module_means.csv
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/4_module_means.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
     - title: Module Means Heatmap
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/4_module_means_heatmap.json
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/5_module_means_heatmap.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
-    - title: Violin Plot Module Variability
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/5_violin_plot_module_variability.json
+    - title: Module Variability
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/6_module_variability.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
     - title: Module Metadata Correlations
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/6_module_metadata_correlations.csv
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/7_module_metadata_correlations.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
-    - title: Correlation Volcano Plot
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/7_correlation_volcano_plot.json
+    - title: Module Metadata Correlations Volcano Plot
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/8_module_metadata_correlations_volcano_plot.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
-    - title: Significant Module Metadata Corr
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/8_significant_module_metadata_corr.csv
+    - title: Significant Module Metadata Correlations
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/9_significant_module_metadata_correlations.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
     - title: Top Correlations Heatmap
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/9_top_correlations_heatmap.json
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_genus_asso/10_top_correlations_heatmap.json
       description: ''
       caption: ''
       component_type: plot
@@ -312,60 +347,67 @@ sections:
   - title: Nopge Species Asso
     description: ''
     components:
-    - title: Nopge Sp Metrics Asso
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/1_NOPGE_sp_metrics_asso.xlsx
+    - title: Network Metrics All Thresholds
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/1_Network_metrics_all_thresholds.xlsx
       description: ''
       caption: ''
       component_type: dataframe
       file_format: xlsx
-    - title: Cclasso Nosinglt 75 Edgelist
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/2_cclasso_nosinglt_75_edgelist.csv
+    - title: Cclasso No Singletons Threshold 75 Edgelist
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/2_cclasso_no_singletons_threshold_75_edgelist.csv
       description: ''
       caption: ''
       component_type: plot
       plot_type: interactive_network
       csv_network_format: edgelist
+    - title: Module Taxa Membership
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/3_module_taxa_membership.csv
+      description: ''
+      caption: ''
+      component_type: dataframe
+      file_format: csv
+      delimiter: ','
     - title: Module Means
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/3_module_means.csv
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/4_module_means.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
     - title: Module Means Heatmap
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/4_module_means_heatmap.json
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/5_module_means_heatmap.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
-    - title: Violin Plot Module Variability
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/5_violin_plot_module_variability.json
+    - title: Module Variability
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/6_module_variability.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
     - title: Module Metadata Correlations
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/6_module_metadata_correlations.csv
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/7_module_metadata_correlations.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
-    - title: Correlation Volcano Plot
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/7_correlation_volcano_plot.json
+    - title: Module Metadata Correlations Volcano Plot
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/8_module_metadata_correlations_volcano_plot.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
-    - title: Significant Module Metadata Corr
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/8_significant_module_metadata_corr.csv
+    - title: Significant Module Metadata Correlations
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/9_significant_module_metadata_correlations.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
     - title: Top Correlations Heatmap
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/9_top_correlations_heatmap.json
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/NOPGE_species_asso/10_top_correlations_heatmap.json
       description: ''
       caption: ''
       component_type: plot
@@ -373,60 +415,67 @@ sections:
   - title: Pge Genus Asso
     description: ''
     components:
-    - title: Pge Gen Metrics Asso
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/1_PGE_gen_metrics_asso.xlsx
+    - title: Network Metrics All Thresholds
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/1_Network_metrics_all_thresholds.xlsx
       description: ''
       caption: ''
       component_type: dataframe
       file_format: xlsx
-    - title: Cclasso Nosinglt 40 Edgelist
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/2_cclasso_nosinglt_40_edgelist.csv
+    - title: Cclasso No Singletons Threshold 40 Edgelist
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/2_cclasso_no_singletons_threshold_40_edgelist.csv
       description: ''
       caption: ''
       component_type: plot
       plot_type: interactive_network
       csv_network_format: edgelist
+    - title: Module Taxa Membership
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/3_module_taxa_membership.csv
+      description: ''
+      caption: ''
+      component_type: dataframe
+      file_format: csv
+      delimiter: ','
     - title: Module Means
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/3_module_means.csv
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/4_module_means.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
     - title: Module Means Heatmap
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/4_module_means_heatmap.json
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/5_module_means_heatmap.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
-    - title: Violin Plot Module Variability
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/5_violin_plot_module_variability.json
+    - title: Module Variability
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/6_module_variability.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
     - title: Module Metadata Correlations
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/6_module_metadata_correlations.csv
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/7_module_metadata_correlations.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
-    - title: Correlation Volcano Plot
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/7_correlation_volcano_plot.json
+    - title: Module Metadata Correlations Volcano Plot
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/8_module_metadata_correlations_volcano_plot.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
-    - title: Significant Module Metadata Corr
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/8_significant_module_metadata_corr.csv
+    - title: Significant Module Metadata Correlations
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/9_significant_module_metadata_correlations.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
     - title: Top Correlations Heatmap
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/9_top_correlations_heatmap.json
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_genus_asso/10_top_correlations_heatmap.json
       description: ''
       caption: ''
       component_type: plot
@@ -434,60 +483,67 @@ sections:
   - title: Pge Species Asso
     description: ''
     components:
-    - title: Pge Sp Metrics Asso
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/1_PGE_sp_metrics_asso.xlsx
+    - title: Network Metrics All Thresholds
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/1_Network_metrics_all_thresholds.xlsx
       description: ''
       caption: ''
       component_type: dataframe
       file_format: xlsx
-    - title: Cclasso Nosinglt 55 Edgelist
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/2_cclasso_nosinglt_55_edgelist.csv
+    - title: Cclasso No Singletons Threshold 55 Edgelist
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/2_cclasso_no_singletons_threshold_55_edgelist.csv
       description: ''
       caption: ''
       component_type: plot
       plot_type: interactive_network
       csv_network_format: edgelist
+    - title: Module Taxa Membership
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/3_module_taxa_membership.csv
+      description: ''
+      caption: ''
+      component_type: dataframe
+      file_format: csv
+      delimiter: ','
     - title: Module Means
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/3_module_means.csv
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/4_module_means.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
     - title: Module Means Heatmap
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/4_module_means_heatmap.json
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/5_module_means_heatmap.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
-    - title: Violin Plot Module Variability
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/5_violin_plot_module_variability.json
+    - title: Module Variability
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/6_module_variability.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
     - title: Module Metadata Correlations
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/6_module_metadata_correlations.csv
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/7_module_metadata_correlations.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
-    - title: Correlation Volcano Plot
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/7_correlation_volcano_plot.json
+    - title: Module Metadata Correlations Volcano Plot
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/8_module_metadata_correlations_volcano_plot.json
       description: ''
       caption: ''
       component_type: plot
       plot_type: plotly
-    - title: Significant Module Metadata Corr
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/8_significant_module_metadata_corr.csv
+    - title: Significant Module Metadata Correlations
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/9_significant_module_metadata_correlations.csv
       description: ''
       caption: ''
       component_type: dataframe
       file_format: csv
       delimiter: ','
     - title: Top Correlations Heatmap
-      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/9_top_correlations_heatmap.json
+      file_path: /Users/asaru/Documents/DTU/MoNA/AirBiome/AirBiome_report/AirBiome_microbial_association_networks_summary/Association_networks/PGE_species_asso/10_top_correlations_heatmap.json
       description: ''
       caption: ''
       component_type: plot
