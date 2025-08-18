@@ -16,6 +16,7 @@ jobs:
       matrix:
         python-version: ["3.11"]
     steps:
+      - uses: actions/checkout@v4
       # --- HTML example deployment ---
       - name: Rename entry point of report to index.html
         run: |
